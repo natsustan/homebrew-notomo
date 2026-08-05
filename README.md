@@ -6,8 +6,11 @@ Homebrew tap for [Notomo](https://notomo.app/).
 
 ```sh
 brew tap natsustan/notomo
+brew trust natsustan/notomo
 brew install --cask notomo
 ```
+
+Homebrew 6+ requires `brew trust` before installing from a third-party tap.
 
 ## Update
 
