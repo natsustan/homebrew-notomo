@@ -1,8 +1,8 @@
 cask "notomo" do
-  version "0.31.0"
-  sha256 "c45d0e759312b13899d6816086c37b1f115c24b38bb4942572a1ae688e15965b"
+  version "0.32.0"
+  sha256 "9a07ab9ebaa8bf52205a018cd7377fda72f2583e594547ea7116e9809ae3d497"
 
-  url "https://notomo.app/Notomo.dmg"
+  url "https://notomo.app/Notomo-#{version}.dmg"
   name "Notomo"
   desc "Markdown shortcuts, quick actions and AI for Apple Notes"
   homepage "https://notomo.app/"
