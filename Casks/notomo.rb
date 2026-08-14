@@ -1,6 +1,6 @@
 cask "notomo" do
-  version "0.33.0"
-  sha256 "094ab41c8c52498808cb85b4d19c177e10170cd26ad2874d194f6a2c5ca7136b"
+  version "0.33.1"
+  sha256 "b8aeb00e66db6db9c1af3b047f07e534a8136714e02b0af69d324db67c52930a"
 
   url "https://notomo.app/Notomo-#{version}.dmg"
   name "Notomo"
