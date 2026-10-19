@@ -22,6 +22,7 @@ To finish cleanup manually:
 ```sh
 brew update
 brew untap natsustan/notomo
+brew untrust natsustan/notomo
 ```
 
 If `untap` reports that `notomo` is still installed from this tap, reinstall it
@@ -30,5 +31,6 @@ from the official cask (uninstalling without `--zap` keeps settings and license)
 ```sh
 brew uninstall --cask notomo
 brew untap natsustan/notomo
+brew untrust natsustan/notomo
 brew install --cask notomo
 ```
