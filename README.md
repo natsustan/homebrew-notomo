@@ -1,27 +1,34 @@
 # homebrew-notomo
 
-Homebrew tap for [Notomo](https://notomo.app/).
+> **Deprecated:** Notomo is now in the official Homebrew Cask repository.
+> This tap is no longer updated.
 
 ## Install
 
 ```sh
-brew tap natsustan/notomo
-brew trust natsustan/notomo
 brew install --cask notomo
 ```
 
-Homebrew 6+ requires `brew trust` before installing from a third-party tap.
+See [formulae.brew.sh/cask/notomo](https://formulae.brew.sh/cask/notomo).
 
-## Update
+## Existing tap users
 
-Notomo updates itself with Sparkle after install. The cask sets `auto_updates true`, so `brew upgrade` skips it by default.
+`tap_migrations.json` moves installed `notomo` casks to `homebrew/cask` on your
+next `brew update`. Your app, settings, and license are untouched, and Notomo
+keeps updating itself through Sparkle.
 
-Force a Homebrew reinstall when needed:
+To finish cleanup manually:
 
 ```sh
-brew reinstall --cask notomo
+brew update
+brew untap natsustan/notomo
 ```
 
-## Source
+If `untap` reports that `notomo` is still installed from this tap, reinstall it
+from the official cask (uninstalling without `--zap` keeps settings and license):
 
-The cask is maintained in the Notomo app repository and published here for `brew tap`.
+```sh
+brew uninstall --cask notomo
+brew untap natsustan/notomo
+brew install --cask notomo
+```
